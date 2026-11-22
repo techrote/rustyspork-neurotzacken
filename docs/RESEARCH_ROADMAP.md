@@ -65,3 +65,18 @@ Paths B, C, D and E must not be conflated: pruning experts changes parameter sha
 - What retained-quality, long-context and memory thresholds constitute a useful winner? Define before evaluating candidates.
 
 See [model dossier](MODEL_SPECIMENS.md), [REAP workplan](REAP_AND_QUANTIZATION.md), [UI specification](FRANKENFIELD_INTERFACE.md), [experiment protocol](EXPERIMENT_PROTOCOL.md), and [references](REFERENCES.md).
+
+## 7. Reconciled work packages and review evidence (22 November 2026)
+
+The owner has now **selected** the KAT REAP-50 Q6 reference and **prioritized** the exact DavidAU LFM Turbo-Brilliance Q6 3–5 GB reduction. Earlier 4–40B paths remain relevant research, but **no other specimen takes precedence**. Replace unattended conversational worm scheduling with a [bounded deterministic laboratory](DETERMINISTIC_LAB.md). An optional NVIDIA adviser may suggest experiments only, never own the run or verdict.
+
+| Package | Deliverable before expensive inference | Release restriction |
+| --- | --- | --- |
+| RSN-LAB-01 | Frozen-source inventory + no-op fixture + CPU/disk limit enforcement | No live donor mutation |
+| RSN-LFM-01 | Exact Q6 tensor layout, router/bias remap, source-exact compactor feasibility report | BLOCK if GGUF round-trip or loader fails |
+| RSN-LFM-02 | Expert saliency with mode/coding/tool/long-tail coverage and source hashes | Keep holdout entirely separate |
+| RSN-LFM-03 | 8/12/16 expert reduction candidate receipts and matched quality/VRAM assessment | No automatic merge or model promotion |
+| RSN-ATLAS-01 | Exact picking/selection and signed statistical atlas on synthetic/small source | WebGPU viewer is not an inference engine |
+| RSN-001 | Existing reblitteration causal/upstream PoC | Independent Draft/HOLD issue |
+
+The [reconciliation](RECONCILIATION_AND_DECISIONS.md), [exact-Q6 engineering](LFM_EXACT_Q6_COMPACTOR.md), [FRANKENFIELD contract](FRANKENFIELD_IMPLEMENTATION_CONTRACT.md), [numeric surgery contracts](SURGERY_OPERATIONS.md) and [qualification gates](QUALIFICATION_GATES.md) define these packages. A second GPU and disk clearance permit the **deferred** eight-bit KAT project only after a new source/baseline receipt.

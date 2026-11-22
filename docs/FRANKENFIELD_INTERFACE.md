@@ -110,3 +110,9 @@ A runnable visualiser for synthetic matrices and one actual 1–4B checkpoint, t
 This is a **proposed implementation plan**, not current source functionality.
 
 See [research tracks](RESEARCH_ROADMAP.md), [REAP](REAP_AND_QUANTIZATION.md), [evaluation](EXPERIMENT_PROTOCOL.md) and [references](REFERENCES.md).
+
+## 9. Implementable viewer-to-surgery contract
+
+The [FRANKENFIELD implementation contract](FRANKENFIELD_IMPLEMENTATION_CONTRACT.md) extends this aesthetic/interaction design with a concrete instrument layout, canonical tensor-coordinate and quant-block model, pick→tile→mask→preview→validated transform chain, declarative selection sample, GPU cache cap, device-loss/fallback strategy and golden synthetic tests. **Rendered imagery is not the source of truth**: the mask resolver and tensor inventory own the exact addresses.
+
+[Operation contracts](SURGERY_OPERATIONS.md) distinguish numeric scoops from structural gouges and runtime skips. [Deterministic lab](DETERMINISTIC_LAB.md) specifies how real edits and tests occur away from the renderer, preserving the 24 GiB Titan for the model where possible. No FRANKENFIELD app or large-model surgery has been implemented in these documents.

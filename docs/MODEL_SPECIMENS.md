@@ -76,3 +76,11 @@ For every donor/candidate record a manifest containing:
 - KAT's BF16 REAP-50 donor and original pipeline explain why calibration, router correction, validation, and model-specific conversion all matter.
 
 Next: [pruning/compaction investigation](REAP_AND_QUANTIZATION.md) and [paired protocol](EXPERIMENT_PROTOCOL.md).
+
+## 7. Owner-selected priorities and deferred KAT eight-bit track
+
+The owner has explicitly confirmed **KAT REAP-50 Q6_K** as the **reference specimen**, with impressive local capability and use at extended context, and **Turbo-Brilliance LFM Q6_K** as the **primary surgery target**. A repo-local KAT evaluation receipt is still absent; existing published KAT NVFP4/Q4 benchmarks must not be presented as the owner's Q6 tests. The immediate LFM outcome must be assessed as **3–5 GB of actual recovered memory**, while preserving speed/behaviour.
+
+The published Ttimms [KAT GGUF card](https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-GGUF) lists **Q8_0 at 19.7 GB** alongside Q6_K at 15.3 GB. It does **not** establish a published **Q8_K**. If a separate local Q8_K specimen exists, inventory its exact bytes, tensor types, origin and quantizer before using the label in any report. Do not initiate this *later* extra-pruning project until the owner has cleared additional HDD space and installed the secondary GPU.
+
+Next documents: [source-exact Q6 compactor](LFM_EXACT_Q6_COMPACTOR.md), [deterministic lab](DETERMINISTIC_LAB.md), [qualification gates](QUALIFICATION_GATES.md).

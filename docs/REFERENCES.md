@@ -87,4 +87,22 @@ The four image references supplied during concept discussion are *aesthetic sket
 - Bench GPU memory pressure under concurrent native Firefox/WebGPU viewer and inference, including device-loss recovery.
 - Archive raw results, including unsuccessful runs; no benchmark result in this index substitutes for our own paired experiment.
 
+## 7. Newly reconciled project references and technical caveats (22 November 2026)
+
+| Source | Link | Why included |
+| --- | --- | --- |
+| Design/owner decision reconciliation | [RECONCILIATION_AND_DECISIONS.md](RECONCILIATION_AND_DECISIONS.md) | Exact adopted LFM and KAT specimens; retained visual intent and engineering boundaries |
+| Deterministic research controller | [DETERMINISTIC_LAB.md](DETERMINISTIC_LAB.md) | Content-addressed DAG, pins, failure capture, optional constrained adviser |
+| LFM source-exact exporter study | [LFM_EXACT_Q6_COMPACTOR.md](LFM_EXACT_Q6_COMPACTOR.md) | Actual-Q6 observation, fused quant blocks, router-bias rewrite and runtime blocker |
+| FRANKENFIELD UI/backend contract | [FRANKENFIELD_IMPLEMENTATION_CONTRACT.md](FRANKENFIELD_IMPLEMENTATION_CONTRACT.md) | Exact tensor masks behind multiresolution WebGPU visualization |
+| Surgery operations taxonomy | [SURGERY_OPERATIONS.md](SURGERY_OPERATIONS.md) | Reversible numerical/structural/graph interventions and Funnel |
+| Qualification matrix | [QUALIFICATION_GATES.md](QUALIFICATION_GATES.md) | Measured VRAM/quality/speed/context and future owner acceptance |
+| NVIDIA Nemotron Lightning model | https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | **Optional adviser research**, not a third primary experimental subject |
+| Nemotron Lightning quant inventory | https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF | Q4_0 (~19.1 GB) vs Q4_K_M (~25.5 GB) illustrates why GGUF **tensor-level** types matter more than filename quant labels |
+| Nemotron Q4_K fallback analysis | https://huggingface.co/bottlecapai/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/blob/main/README.md | Expert widths not divisible by 256 trigger mixed fallback quantization in conventional llama.cpp pipelines; counterexample relevant to LFM compaction audits |
+| Original Turbo-Brilliance GGUF | https://huggingface.co/DavidAU/LFM2.5-24B-A2B-Turbo-Brilliance-50X-NEO-MAX-Imatrix-GGUF | Actual family lists regular Q6 and MAX-NEO Q6; hash the **chosen** one |
+| Public KAT-REAP eight-bit file | https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-GGUF | The public eight-bit GGUF is **Q8_0**, not evidence of a Q8_K file |
+
+**Do not extrapolate the Nemotron fallback to LFM:** it is an existence proof for per-tensor format audits, not a measurement of LFM tensor types. Do not assume hosted adviser access or prices until separately verified.
+
 **End of sources index.** Go to [roadmap](RESEARCH_ROADMAP.md), [specimens](MODEL_SPECIMENS.md), [compaction](REAP_AND_QUANTIZATION.md), [FRANKENFIELD](FRANKENFIELD_INTERFACE.md), [experiment protocol](EXPERIMENT_PROTOCOL.md).

@@ -79,3 +79,11 @@ Potential partial alternative while studying pruning: decrease the KV cache prec
 - Paired task evaluation and memory/performance report, including all failed arms, archived independently of model weights.
 
 Go to [evaluation protocol](EXPERIMENT_PROTOCOL.md), [model budget](MODEL_SPECIMENS.md) or [reference index](REFERENCES.md).
+
+## 8. Technical execution expansion
+
+The [exact-Q6 compactor specification](LFM_EXACT_Q6_COMPACTOR.md) divides the problem into **(a) activation/router observation on the actual quantized donor** and **(b) CPU/disk-backed GGUF export**. This avoids accidentally calling layerwise saliency collection a solved out-of-core final prune stage. It provides testable requirements for quant-block-safe expert packing, router + `expert_bias` remapping, MAX-NEO output precision, runtime loader adaptation, no-op round trips and real VRAM accounting.
+
+For a *source-exact* claim, verify unchanged quantized bytes and source metadata where possible. If any expert ranges must be dequantized and requantized, list all affected blocks and error bounds; if the official BF16 parent is not weight-equivalent to Turbo-Brilliance, its pruning results form a **separate proxy experiment**. REAP score, frequency pruning and random deletion have distinct meanings; compare them against equal-size mixed precision, not just nominal Q6 vs Q4 labels. The Nemotron quantization-format counterexample is indexed in [references](REFERENCES.md).
+
+The [deterministic laboratory](DETERMINISTIC_LAB.md) and [qualification matrix](QUALIFICATION_GATES.md) are the intended control plane for every subsequent run. No weights, GGUF files or executable compactor have been produced by the document expansion.

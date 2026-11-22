@@ -110,3 +110,11 @@ The [D1 Frankenlayers record](https://github.com/techrote/DRIV3R/blob/main/exper
 Reimplement graph experiments as separate architecture-specific controlled tests and preserve failure attractors as first-class outcomes.
 
 See [research programme](RESEARCH_ROADMAP.md), [model analysis](MODEL_SPECIMENS.md), [REAP/GGUF notes](REAP_AND_QUANTIZATION.md), [interface](FRANKENFIELD_INTERFACE.md), and [references](REFERENCES.md).
+
+## 10. Reconciled acceptance gates and deferrals
+
+The [qualification gates](QUALIFICATION_GATES.md) turn this protocol into a staged G0–G6 acceptance plan with a Windows/Firefox co-residency matrix, exact file/VRAM measurement definitions, context-tier evidence, failure taxonomy and owner-held GO/HOLD/NO-GO decisions. Their proposed numeric screening thresholds are **not** retrospectively owner-approved facts; register policy before seeing candidate outputs.
+
+**Priority order:** KAT-REAP Q6 as reference; DavidAU LFM Turbo-Brilliance Q6 as primary 3–5 GB candidate; defer KAT REAP eight-bit further pruning until disk space and a second GPU are in place. The public REAP GGUF lists **Q8_0**, not a verified Q8_K. Native LFM 131,072 remains distinct from allocated 150K/250K extrapolation, and raw local Q6 receipts are not yet archived here.
+
+The [exact-Q6 exporter investigation](LFM_EXACT_Q6_COMPACTOR.md) and [deterministic controller](DETERMINISTIC_LAB.md) require source-equivalence/quant-block/no-op tests before expensive LFM mutant evaluation.
