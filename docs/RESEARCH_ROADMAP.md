@@ -76,7 +76,13 @@ The owner has now **selected** the KAT REAP-50 Q6 reference and **prioritized** 
 | RSN-LFM-01 | Exact Q6 tensor layout, router/bias remap, source-exact compactor feasibility report | BLOCK if GGUF round-trip or loader fails |
 | RSN-LFM-02 | Expert saliency with mode/coding/tool/long-tail coverage and source hashes | Keep holdout entirely separate |
 | RSN-LFM-03 | 8/12/16 expert reduction candidate receipts and matched quality/VRAM assessment | No automatic merge or model promotion |
+| [RSN-KAT-003](https://github.com/techrote/rustyspork-neurotzacken/issues/3) | Separate KAT 256→224/192/160 expert REAP/Greyhound study; matched stock vs published REAP-50 Q4/Q6, source-exact baseline controls, actual Titan VRAM | Begin with source inventory and synthetic fixtures; no new model download or GPU run in docs PR |
 | RSN-ATLAS-01 | Exact picking/selection and signed statistical atlas on synthetic/small source | WebGPU viewer is not an inference engine |
 | RSN-001 | Existing reblitteration causal/upstream PoC | Independent Draft/HOLD issue |
 
 The [reconciliation](RECONCILIATION_AND_DECISIONS.md), [exact-Q6 engineering](LFM_EXACT_Q6_COMPACTOR.md), [FRANKENFIELD contract](FRANKENFIELD_IMPLEMENTATION_CONTRACT.md), [numeric surgery contracts](SURGERY_OPERATIONS.md) and [qualification gates](QUALIFICATION_GATES.md) define these packages. A second GPU and disk clearance permit the **deferred** eight-bit KAT project only after a new source/baseline receipt.
+
+
+### Additional KAT workstream (23 November 2026)
+
+Following the new KAT-Coder pruning request, [KAT-GREYHOUND-MOE-001](KAT_GREYHOUND_REAP_PLAN.md) defines a bounded, independent **KAT Q4 structural-compaction** programme on the Titan RTX. The official Kwaipilot model is the lineage parent and the published Ttimms REAP-50 Q4/Q6 checkpoints are operational comparisons. The plan requires **same-parent/matched-quantizer** controls before attributing quality deltas solely to expert pruning, starts with 224/192 experts, and defers dangerous physical layer removal until model-specific state semantics and exporter compatibility are proven. This does **not** cancel the earlier LFM2.5 Turbo-Brilliance exact-Q6 project or authorize the separately deferred KAT Q8_0 follow-on. No pruning, baseline or local evaluation has been executed by the addition of this documentation.
