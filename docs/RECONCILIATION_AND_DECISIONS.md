@@ -2,6 +2,8 @@
 
 **22 November 2026 · Design record / owner-priority reconciliation · No implementation claimed**
 
+The graphics ownership decisions below are historical. [Xenovection](https://github.com/techrote/Xenovection) now owns graphical presentation. The exact selection, model custody and scientific validation requirements continue in [RustySpork](../README.md#repository-boundary).
+
 This document reconciles the recovered design discussion, the existing RustySpork research package and the subsequent two-specimen decision. It is **not a verbatim transcript**: the recovered design requirements and existing repository material were reviewed together. Assumptions and source-reported observations are labelled separately from measurements made by this repository.
 
 ## Decision summary

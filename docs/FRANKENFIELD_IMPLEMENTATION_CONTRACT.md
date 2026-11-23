@@ -2,6 +2,8 @@
 
 **Proposed technical specification.** Extends [the visual concept](FRANKENFIELD_INTERFACE.md) without claiming an existing renderer, GGUF editor or LLM execution backend.
 
+This is a historical design. [Xenovection](https://github.com/techrote/Xenovection) owns graphical rendering, interaction and presentation. RustySpork owns exact tensor coordinates and masks, deterministic statistics, provenance and validation of all proposed edits. The payload sketches below retain their design context. See the [implemented formats](IMPLEMENTATION_STATUS.md) for the current interfaces.
+
 ## Contents
 
 1. [Visual interaction and instrument layout](#1-visual-interaction-and-instrument-layout) — a theatrical but interpretable 3D neural cosmos
