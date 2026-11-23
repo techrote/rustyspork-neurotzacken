@@ -2,6 +2,8 @@
 
 **Engineering blueprint — no scheduler, backend, GPU pipeline or benchmarks implemented by this documentation commit.**
 
+The [implementation status](IMPLEMENTATION_STATUS.md) and [Windows quick start](../README.md#windows-quick-start) describe the executable subset of this blueprint and its current command syntax.
+
 ## Contents
 
 1. [Purpose and threat model](#1-purpose-and-threat-model) — keep all expensive or destructive control outside language models

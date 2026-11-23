@@ -2,6 +2,8 @@
 
 **Design record, 2026-11-22. Status: proposed UI and backend, not an implemented application.**
 
+The graphical responsibilities in this historical design have transferred to [Xenovection](https://github.com/techrote/Xenovection). RustySpork retains canonical tensor addresses, selection-mask validation, numerical statistics, provenance and verified checkpoint edits. See the [current repository boundary](../README.md#repository-boundary).
+
 ## 1. Product hypothesis
 
 A dedicated neural anatomy/surgery laboratory for open-weight models: inspect a 4–40B model as a navigable, statistically faithful structure; select tensor coordinates and graph components intuitively; plan and preview deliberately destructive experiments; execute them against an immutable donor; compare behavioural consequences; and export reproducible mutants.
